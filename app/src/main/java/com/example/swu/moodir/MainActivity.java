@@ -311,13 +311,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             sad.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    colorView.setImageResource(R.drawable.angerview);
+                    colorView.setImageResource(R.drawable.sadview);
                 }
             });
             anger.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    colorView.setImageResource(R.drawable.sadview);
+                    colorView.setImageResource(R.drawable.angerview);
                 }
             });
             disgust.setOnClickListener(new View.OnClickListener() {
@@ -340,7 +340,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (isChecked) {
                         //On
                         secretEditText.setVisibility(View.VISIBLE);
-                        Toast.makeText(getContext(), "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getContext(), "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
 
                     } else {
                         //Off
