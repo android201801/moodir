@@ -72,11 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        joy = (ImageButton) findViewById(R.id.imageButton6);
-        sad = (ImageButton) findViewById(R.id.imageButton7);
-
-
+        
         //디비 핼퍼 객체 생성
         dbHelper = new DiaryDBHelper(this);
         pdbHelper = new DiaryPassDBHelper(this);
