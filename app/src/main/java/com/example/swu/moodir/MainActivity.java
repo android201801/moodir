@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         //디비 핼퍼 객체 생성
         dbHelper = new DiaryDBHelper(this);
         pdbHelper = new DiaryPassDBHelper(this);
@@ -336,7 +336,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (isChecked) {
                         //On
                         secretEditText.setVisibility(View.VISIBLE);
-                        //Toast.makeText(getContext(), "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
 
                     } else {
                         //Off
