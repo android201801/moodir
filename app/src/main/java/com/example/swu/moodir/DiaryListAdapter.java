@@ -9,9 +9,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by aristata on 2016-07-20.
- */
 public class DiaryListAdapter extends BaseAdapter {
     private Context ctx;
     private int layout;
@@ -30,9 +27,7 @@ public class DiaryListAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
-        return data.get(position);
-    }
+    public Object getItem(int position) { return data.get(position); }
 
     @Override
     public long getItemId(int position) {
